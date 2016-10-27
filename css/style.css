@@ -1,0 +1,361 @@
+.main-content {
+    padding-top: 50px;
+}
+
+body {
+    background-color: #f7f7f7;
+}
+
+* {
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav_sub {
+    will-change: transform;
+    width: 100%;
+    z-index: 1;
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+    -webkit-transition: all 0.45s cubic-bezier(0.23, 1, 0.32, 1);
+    transition: all 0.45s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.nav--active {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+}
+
+.nav__list {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.nav__item {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    position: relative;
+    -webkit-transition: all 0.45s cubic-bezier(0.23, 1, 0.32, 1);
+    transition: all 0.45s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.nav__item:hover {
+    opacity: 0.8;
+}
+
+.nav__item:hover:focus {
+    background: red;
+}
+
+.nav__thumb {
+    display: block;
+    height: 80px;
+    background: #dc143c;
+    -webkit-transition: all 0.45s cubic-bezier(0.23, 1, 0.32, 1);
+    transition: all 0.45s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.nav__label {
+    letter-spacing: 2px;
+    color: #fff;
+    text-align: center;
+    display: block;
+    margin: auto;
+    line-height: 80px;
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.nav__label:hover {
+    text-decoration: none;
+}
+
+@media (max-width: 850px) {
+    .nav__label {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 720px) {
+    .nav__label {
+        display: none;
+    }
+
+    .nav__thumb {
+        height: 90px;
+    }
+
+    .nav__thumb:before {
+        font-size: 32px;
+        opacity: 0.7;
+    }
+}
+
+.page {
+    height: 70vh;
+    will-change: transform;
+    -webkit-perspective: 400px;
+    perspective: 400px;
+    overflow: hidden;
+    -webkit-transition: all 0.45s cubic-bezier(0.23, 1, 0.32, 1);
+    transition: all 0.45s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.section {
+    will-change: transform;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 70vh;
+    overflow: hidden;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: flex-start;
+    text-align: left;
+    background: #fff;
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+    -webkit-transition: all 0.7s cubic-bezier(0.23, 1, 0.32, 1);
+    transition: all 0.7s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.section--hidden {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%);
+}
+
+.section--active {
+    -webkit-transform: translateX(0) rotateY(0);
+    transform: translateX(0) rotateY(0);
+    z-index: 2;
+}
+
+/*.section__wrapper {*/
+/*color: #fff;*/
+/*margin-left: 100px;*/
+/*width: 700px;*/
+/*}*/
+
+.section__wrapper p {
+    /*font-weight: 300;*/
+    /*font-size: 24px;*/
+    /*padding-right: 60px;*/
+}
+
+.section__title {
+    margin: 0 0 4px 0;
+    font-size: 45px;
+    line-height: 48px;
+    font-weight: 200;
+    color: #fff;
+}
+
+.section__subtitle {
+    font-weight: 400 !important;
+    font-size: 18px !important;
+    line-height: 32px;
+    /*color: rgba(255,255,255,.82);*/
+color: #fff;
+}
+
+
+.section p:last-child {
+    margin-bottom: 0;
+}
+
+.color1 {
+    background: #009ed8;
+}
+
+.color2 {
+    background: #00aff0;
+}
+
+.color3 {
+    background: #21b9f2;
+}
+
+.color4 {
+    background: #75d4f7;
+}
+
+.color5 {
+    background: #9EE1F9;
+}
+
+.talent {
+    background: url("../img/solution.jpg") no-repeat center center;
+    background-size: cover;
+}
+
+.postjob {
+    background: url("../img/postjob.jpg") no-repeat center center;
+    background-size: cover;
+}
+
+.brand {
+    background: url("../img/talents.jpg") no-repeat center center;
+    background-size: cover;
+}
+
+.solution {
+    background: url("../img/service.jpg") no-repeat center center;
+    background-size: cover;
+}
+
+.hero-button button {
+    color: #fff;
+    background-color: #46c054;
+    font-size: 16px;
+    border: none;
+    border-radius: 0;
+    width: 140px;
+    height: 40px;
+    padding: 0 32px;
+    margin-top: 20px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+}
+
+.btn-full {
+    color: #fff;
+    background-color: #46c054;
+    font-size: 16px;
+    border: none;
+    border-radius: 0;
+    height: 40px;
+    width: 100%;
+}
+
+.btn-full:hover{
+    color: #fff !important;
+}
+
+.btn-find{
+    color: #fff;
+    background-color: #46c054;
+    font-size: 16px;
+    border: none;
+    border-radius: 0;
+    height: 40px;
+    min-width: 120px;
+}
+
+.btn-find:hover{
+    color: #fff !important;
+}
+
+
+.btn-sec{
+    color: #fff;
+    background-color: transparent;
+    font-size: 16px;
+    border: 1px solid #fff;
+    border-radius: 0;
+    height: 40px;
+    min-width: 120px;
+}
+
+
+.job-field {
+    background-color: rgba(255, 255, 255, .28);
+    border-radius: 0;
+    border: none;
+    color: #fff;
+    height: 40px;
+    font-size: 16px;
+    width: 100% !important;
+
+}
+
+.find-field{
+    width: 33.3%;
+}
+
+
+.form-control::-webkit-input-placeholder {
+    color: rgba(255,255,255,.66);
+    padding-right: 40px;
+}
+
+.form-control:-moz-placeholder {
+    color: rgba(255,255,255,.66);
+}
+
+.form-control::-moz-placeholder {
+    color: rgba(255,255,255,.66);
+}
+
+.form-control:-ms-input-placeholder {
+    color: rgba(255,255,255,.66);
+}
+
+.hero-button button:hover {
+    background-color: #3FAD4C;
+    transition: 0.2s;
+}
+
+.hero-button .ghost-btn {
+    border: 1px solid white;
+    background-color: transparent;
+}
+
+.hero-button .ghost-btn:hover {
+    background-color: rgba(255, 255, 255, 0.15);
+    transition: 0.2s;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+a:focus {
+    text-decoration: none;
+}
+
+.hero-nav {
+    padding: 0;
+}
+
+.job-form {
+    background-color: rgba(0, 0, 0, .26);
+    padding: 40px 20px;
+}
+
+.btn:hover{
+    color: #fff!important;
+}

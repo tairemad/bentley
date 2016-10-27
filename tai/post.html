@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<meta name="description" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Post</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+<link href="css/style.css" rel="stylesheet">
+<link href='//fonts.googleapis.com/css?family=Roboto:100,300,400,500,600,700' rel='stylesheet' type='text/css' />
+<link href="https://cdn.materialdesignicons.com/1.7.12/css/materialdesignicons.min.css" rel="stylesheet">
+<script src="//cdn.tinymce.com/4/tinymce.min.js"></script>
+<script>tinymce.init({ selector:'textarea.tinymce' });</script>
+</head>
+
+<body>
+		<nav class="navbar  navbar-fixed-top" style='background-color: #fff'>
+		<div class="container">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="#"><img src='img/logo-h.png' style="height: 100%;"></a>
+			</div>
+			<div id="navbar" class="collapse navbar-collapse">
+				<ul class="nav navbar-nav" style='float: right'>
+					<li class="active"><a href="#">Products</a></li>
+					<li><a href="#about">Pricing</a></li>
+					<li><a href="#contact">Success Stories</a></li>
+
+					<li><a href="#contact">Sign In</a></li>
+				</ul>
+			</div><!--/.nav-collapse -->
+		</div>
+	</nav>
+
+
+	<div class="container post-pages">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="p-section">
+					<div class="post-header">
+						<h1>Post a Job</h1>
+					</div>
+					<div class="post-progress text-center">
+
+						<svg width="836px" height="68px" viewBox="183 124 836 68" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+							<!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
+							<desc>Created with Sketch.</desc>
+							<defs>
+								<circle id="path-1" cx="9" cy="9" r="9"></circle>
+								<filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-2">
+									<feMorphology radius="0.5" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+									<feOffset dx="0" dy="2" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+									<feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+									<feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
+									<feColorMatrix values="0 0 0 0 0.768069728   0 0 0 0 0.768069728   0 0 0 0 0.768069728  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+								</filter>
+							</defs>
+							<g id="Group-2" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(183.000000, 124.000000)">
+								<text id="Job-Details" font-family="Roboto-Regular, Roboto" font-size="20" font-weight="normal" fill="#00AFF0">
+									<tspan x="0" y="21">JOB DETAILS</tspan>
+								</text>
+								<text id="Posting-Options" font-family="Roboto-Regular, Roboto" font-size="20" font-weight="normal" fill="#BDBDBD">
+									<tspan x="340" y="21">POSTING OPTIONS</tspan>
+								</text>
+								<text id="Checkout" font-family="Roboto-Regular, Roboto" font-size="20" font-weight="normal" fill="#BDBDBD">
+									<tspan x="733" y="21">CHECKOUT</tspan>
+								</text>
+								<circle id="Oval-1" fill="#BDBDBD" cx="423" cy="52" r="4"></circle>
+								<g id="Group" transform="translate(47.000000, 43.000000)">
+									<g id="Oval-4">
+										<use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+										<use stroke="#BDBDBD" stroke-width="1" fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+									</g>
+									<circle id="Oval-1-Copy-2" fill="#00AFF0" cx="9" cy="9" r="4"></circle>
+								</g>
+								<circle id="Oval-1-Copy" fill="#BDBDBD" cx="789" cy="52" r="4"></circle>
+								<path d="M75.5,52.5 L406.5,52.5" id="Line" stroke="#BDBDBD" stroke-linecap="square"></path>
+								<path d="M440.5,52.5 L771.5,52.5" id="Line-Copy" stroke="#BDBDBD" stroke-linecap="square"></path>
+							</g>
+						</svg>
+					</div>
+
+				</div> <!-- end p-section -->
+			</div> <!-- end col-12 -->
+
+			<div class="col-md-12" id="job-desc">
+				<div class="p-section" >
+					<div class="post-job-desc clearfix">
+						<div class="col-md-8" style="padding-left: 0;">
+							<h1>Software Engineer</h1>
+							<p>Full-Time Employee</p>
+							<p>Hiresense International &#x2027; IT/Technology &#x2027; 50000 Employees</p>
+							<p>Street Address 1, City, State, ZIP Code</p>
+						</div>
+						<div class="col-md-2 post-edit pull-right text-right"  style="padding-right: 0;">
+							<i class="mdi mdi-pencil-box-outline"></i>
+							<p>EDIT</p>
+						</div>
+					</div>
+				</div> <!-- end p-section -->
+			</div> <!-- end col-12 -->
+
+
+			<div class="col-md-12" id="post-form">
+				<div class="p-section">
+					<div class="post-editor">
+						<p class="post-label">Job Title <sup>*</sup></p>
+						<input type="text" name="title" placeholder="Software Engineer" class="job-form">
+						<p class="post-label">Job Type <sup>*</sup></p>
+						<select class="j-type" style="margin-right:50px;">
+							<option>Employee</option>
+							<option>Employee</option>
+							<option>Employee</option>
+						</select>
+						<select class="j-type">
+							<option>Full Time</option>
+							<option>Full Time</option>
+							<option>Full Time</option>
+						</select>
+						<p class="post-label">Company Name</p>
+						<input type="text" name="title" placeholder="Hiresense International" class="job-form">
+						<p class="post-label">Company Industry</p>
+						<input type="text" name="title" placeholder="Hiresense International" class="job-form">
+						<p class="post-label">Company Size</p>
+						<select class="j-comp">
+							<option>2000 - 5000</option>
+							<option>5000 - 10000</option>
+							<option>10000 - 20000</option>
+						</select>
+						<p class="post-label">Address 1</p>
+						<input type="text" name="title" placeholder="" class="job-form">
+						<p class="post-label j-state">State</p>
+						<p class="post-label j-state pull-right">Zip Code</p>
+						<input type="text" name="title" placeholder="" class="job-form j-state">
+						<input type="text" name="title" placeholder="" class="job-form j-state pull-right">
+						<div class="clearfix">
+							<button class="save-btn pull-right">SAVE</button>
+						</div>
+
+
+
+
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-12">
+				<div class="p-section post-editor">
+					<p class="post-label">Salary/wage</p>
+					<input type="text" name="amount" placeholder="Enter amount" class="amount">
+					<p class="r-label"><i class="mdi mdi-plus-circle"></i> Add range</p> 
+					<input type="text" name="bonus" placeholder="Enter Bonus" class="bonus">
+					<select class="p-when">
+						<option>Per Year</option>
+						<option>Per Month</option>
+						<option>Per Week</option>
+					</select>
+				
+					<p class="show-salary"><input type="checkbox" name="select-salary" class="checkbox"> show your salary info (including the salary boost your job views)</p>
+					<div class="salary-btn-sec">
+					<button class="b-btn">Benchmark my salary</button> <a href="#" class="j-info">What is this?</a>
+					</div>
+					<div class="j-progress">			
+						<svg width="1006px" height="86px" viewBox="217 1951 1006 86" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+							<!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
+							<desc>Created with Sketch.</desc>
+							<defs></defs>
+							<g id="Group-18" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(217.000000, 1951.000000)">
+								<g id="Group-11" transform="translate(551.000000, 0.000000)">
+									<polygon id="Triangle" fill="#FF9430" transform="translate(57.500000, 32.000000) scale(1, -1) translate(-57.500000, -32.000000) " points="57.5 28 64 36 51 36"></polygon>
+									<rect id="Rectangle-3" fill="#FF9430" x="0" y="0" width="115" height="28" rx="4"></rect>
+									<text id="Your-Salary" font-family="Roboto-Regular, Roboto" font-size="14" font-weight="normal" fill="#FFFFFF">
+										<tspan x="22" y="20">Your Salary</tspan>
+									</text>
+								</g>
+								<g id="Group-29" transform="translate(0.000000, 39.000000)">
+									<text id="25%" font-family="Roboto-Regular, Roboto" font-size="20" font-weight="normal" fill="#757575">
+										<tspan x="237.175198" y="44">25%</tspan>
+									</text>
+									<text id="50%" font-family="Roboto-Regular, Roboto" font-size="20" font-weight="normal" fill="#757575">
+										<tspan x="488.131218" y="44">50%</tspan>
+									</text>
+									<text id="75%" font-family="Roboto-Regular, Roboto" font-size="20" font-weight="normal" fill="#757575">
+										<tspan x="739.087239" y="44">75%</tspan>
+									</text>
+									<rect id="Rectangle-2" fill="#9EE1F9" x="0" y="0" width="250.95602" height="14" rx="2"></rect>
+									<rect id="Rectangle-2-Copy-2" fill="#75D4F7" x="251.681327" y="0" width="250.95602" height="14" rx="2"></rect>
+									<rect id="Rectangle-2-Copy-3" fill="#21B9F2" x="503.362653" y="0" width="250.95602" height="14" rx="2"></rect>
+									<rect id="Rectangle-2-Copy-4" fill="#00AFF0" x="755.04398" y="0" width="250.95602" height="14" rx="2"></rect>
+								</g>
+							</g>
+						</svg>
+					</div>
+					<p class="post-label">Job Description <sup>*</sup></p>
+					<div class="notice clearfix"><p class="pull-left"><i class="mdi mdi-note-text"></i><span style="font-weight:500;">Template Found!</span> Save time with a pre-written description template</p><button id="use" class="pull-right">USE</button>
+					</div>
+					<textarea class="tinymce">
+						
+					</textarea>
+					<p class="p-directions">Click to <span>upload</span> your job description (doc, .docx, .txt, .rtf files only)</p>
+
+
+				</div> <!-- end p-section -->
+			</div> <!-- end col-12 -->
+
+			<div class="col-md-12">
+				<div class="p-section post-editor">
+					<p class="post-label">Company logo (Optional)</p>
+					<p class="logo">Select your Logo or use <span>manual upload</span> </p>
+
+					<div class="logo-img">
+
+						<svg width="1008px" height="152px" viewBox="96 134 1008 152" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+							<!-- Generator: Sketch 39.1 (31720) - http://www.bohemiancoding.com/sketch -->
+							<desc>Created with Sketch.</desc>
+							<defs></defs>
+							<g id="Group-8" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(97.000000, 135.000000)">
+								<g id="Group-3">
+									<rect id="Rectangle-70-Copy" fill-opacity="0.404664855" fill="#D7D7E4" opacity="0.61223181" x="0" y="0" width="328.043478" height="150"></rect>
+									<text id="logo-image-here" font-family="Roboto-Light, Roboto" font-size="16" font-weight="300" fill-opacity="0.790109828" fill="#212121">
+										<tspan x="97.3195652" y="86">logo image here</tspan>
+									</text>
+									<path d="M1.64021739,149.5 L326.403261,2.5" id="Line" stroke="#979797" stroke-linecap="square" opacity="0.422632929"></path>
+									<path d="M0.54673913,0.5 L326.403261,148.5" id="Line" stroke="#979797" stroke-linecap="square" opacity="0.422632929"></path>
+								</g>
+								<g id="Group-3-Copy" transform="translate(340.000000, 0.000000)">
+									<rect id="Rectangle-70-Copy" fill-opacity="0.404664855" fill="#D7D7E4" opacity="0.61223181" x="0" y="0" width="328.043478" height="150"></rect>
+									<text id="logo-image-here" font-family="Roboto-Light, Roboto" font-size="16" font-weight="300" fill-opacity="0.790109828" fill="#212121">
+										<tspan x="97.3195652" y="86">logo image here</tspan>
+									</text>
+									<path d="M1.64021739,149.5 L326.403261,2.5" id="Line" stroke="#979797" stroke-linecap="square" opacity="0.422632929"></path>
+									<path d="M0.54673913,0.5 L326.403261,148.5" id="Line" stroke="#979797" stroke-linecap="square" opacity="0.422632929"></path>
+								</g>
+								<g id="Group-3-Copy-2" transform="translate(678.000000, 0.000000)">
+									<rect id="Rectangle-70-Copy" fill-opacity="0.404664855" fill="#D7D7E4" opacity="0.61223181" x="0" y="0" width="328.043478" height="150"></rect>
+									<text id="logo-image-here" font-family="Roboto-Light, Roboto" font-size="16" font-weight="300" fill-opacity="0.790109828" fill="#212121">
+										<tspan x="97.3195652" y="86">logo image here</tspan>
+									</text>
+									<path d="M1.64021739,149.5 L326.403261,2.5" id="Line" stroke="#979797" stroke-linecap="square" opacity="0.422632929"></path>
+									<path d="M0.54673913,0.5 L326.403261,148.5" id="Line" stroke="#979797" stroke-linecap="square" opacity="0.422632929"></path>
+								</g>
+							</g>
+						</svg>
+					</div>
+					<p class="post-label"><input type="checkbox" name="checkbox" class="checkbox check-about"> About Us (Optional)</p>
+					<div class="about">
+					<textarea></textarea>
+					<p class="char-limit pull-right">500 Characters Limit</p>
+					
+					<p class="post-label" style="margin-top:30px;">Company Website Url</p>
+					<input type="text" name="textbox" class="company-url" placeholder="http://www.yourcompany.com/jobs">
+					</div>
+
+				</div> <!-- end p-section -->
+			</div> <!-- end col-12 -->
+
+			<div class="col-md-12">
+				<div class="p-section post-editor">
+					<p class="post-label">Apply Method</p>
+					<p class="apply"><input type="radio" name="apply">Manage your applications in your Hiresense account   <span>*Recommended</span></p>
+					<input type="text" name="textbox" class="apply-text">
+					<p class="apply"><input type="radio" name="apply">Direct applicants to an external site to apply Enter a URL
+					</p>
+					<input type="text" name="textbox" class="apply-text" placeholder="http://www.yourcompany.com/jobs">
+					<div class="p-submit text-center">
+						<button onclick="javascript:location.href='post-options.html'">Continue</button> <a href="#">Preview</a>
+					</div>
+				</div> <!-- end p-section -->
+			</div> <!-- end col-12 -->
+
+
+
+		</div> <!-- end row -->
+	</div> <!-- end container -->
+
+
+
+
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" type="text/javascript"></script>
+
+	<script type="text/javascript">
+	$(document).ready(function(){
+		$('i.mdi.mdi-pencil-box-outline').on('click', function(){
+			$('#job-desc').hide();
+			$('#post-form').show();
+
+		});
+
+		$('.save-btn').on('click', function(){
+			$('#post-form').hide();
+			$('#job-desc').show();
+		});
+		$('.b-btn').on('click', function(){
+			$('.j-progress').toggle();
+		});
+
+		$('.check-about').on('change', function(){
+       			 $('.about').toggle();
+		});
+		$('#use').on('click', function(){
+			
+			tinyMCE.activeEditor.setContent('Cupcake ipsum dolor sit amet gummies jelly-o. Cake danish I love. Carrot cake biscuit pie dragée wafer tiramisu gingerbread. Cheesecake donut cheesecake bear claw dragée pudding oat cake. Jelly-o lollipop topping. Chocolate bar powder macaroon chocolate bar I love jelly-o gummies. Apple pie marzipan I love dessert. Brownie muffin bear claw I love chocolate bar. Cotton candy gingerbread dessert croissant liquorice carrot cake marshmallow. Muffin jelly I love wafer I love cake muffin. I love tiramisu candy tart danish topping. Jelly-o gummies donut chupa chups I love jelly-o dessert chocolate bar chocolate. Halvah biscuit lollipop dragée. Chocolate cake sugar plum jujubes soufflé I love pudding chupa chups wafer I love. I love tart macaroon sesame snaps biscuit sweet roll candy lemon drops tootsie roll. Biscuit topping wafer gummies. Croissant topping donut carrot cake cupcake wafer gummies muffin topping. Halvah liquorice I love sugar plum sweet. Tiramisu tiramisu I love caramels biscuit powder oat cake gummi bears cupcake. Carrot cake bonbon jelly-o donut. Ice cream danish cake cheesecake macaroon pie danish. Fruitcake I love sweet bear claw oat cake I love halvah sweet roll I love. Gummi bears donut I love bonbon I love. Cake caramels ice cream cotton candy caramels oat cake. Apple pie sesame snaps I love. Jujubes caramels tootsie roll. Gingerbread tart oat cake cupcake I love jelly carrot cake. Topping cotton candy soufflé apple pie.');
+
+		});
+
+		$('.j-info').on('click', function(e){
+			e.preventDefault();
+			$(this).replaceWith('<p class="desc-info"> Use our cloud compensation solution and find out how you can start paying your employees the right way.</p>');
+		});
+
+
+	});
+		
+
+	</script>
+
+</body>
+</html>
