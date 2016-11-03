@@ -310,11 +310,22 @@
 
 	  <script type="text/javascript">
 
-            $('.p-table').on('click', 'div', function(e){
-                e.preventDefault();
+            // $('.p-table').on('click', 'div', function(e){
+            //     e.preventDefault();
+            //     var $this = $(this).parent().find('.feat-info, .feat-info-close');
+            //     $(this).parent().find('i.mdi.mdi-chevron-right.m-blueText').toggleClass('hide','show');
+            //     $this.slideToggle('slow');
+            // });
+
+            $('.p-table').on('mouseenter', 'div', function(e){
                 var $this = $(this).parent().find('.feat-info, .feat-info-close');
-                $(this).parent().find('i.mdi.mdi-chevron-right.m-blueText').toggleClass('hide','show');
-                $this.slideToggle('slow');
+                $(this).parent().find('i.mdi.mdi-chevron-right.m-blueText').toggleClass('i.mdi.mdi-chevron-right.m-blueText','i.mdi.mdi-chevron-down.m-blueText');
+                $this.slideDown('slow');
+            }).on('mouseleave', 'div', function(){
+                var $this = $(this).parent().find('.feat-info, .feat-info-close');
+                 $(this).parent().find('i.mdi.mdi-chevron-down.m-blueText').toggleClass('i.mdi.mdi-chevron-down.m-blueText','i.mdi.mdi-chevron-right.m-blueText');
+                $this.slideUp('slow');
+
             });
 
         </script>

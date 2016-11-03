@@ -160,7 +160,7 @@ window.onload = function () {
                     '-webkit-transform': 'translateY(' + navH + 'px)'
                 });
             });
-            $('body').on('keydown', keyNav);
+            $('body').on('keydown');
         };
 
         var init = function () {
